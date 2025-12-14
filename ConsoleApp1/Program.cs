@@ -257,7 +257,7 @@ namespace ToyStoreMenu
 
                 double total = d * priceDoll + c * priceCar + l * priceLego + b * priceBear;
                 Random rnd = new Random();
-                double discount = total * rnd.NextDouble() * 0.1;
+                double discount = total * rnd.NextDouble() * 0.9;
 
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine($"\nСума: {Math.Round(total, 2)} грн");
@@ -277,10 +277,10 @@ namespace ToyStoreMenu
         static void ShowToys()
         {
             Console.WriteLine("\nСписок іграшок:");
-            Console.WriteLine("Лялька - 250.00");
-            Console.WriteLine("Машинка - 180.00");
-            Console.WriteLine("Конструктор - 520.00");
-            Console.WriteLine("М'яка іграшка - 300.00");
+            Console.WriteLine("Лялька - 250.00 грн");
+            Console.WriteLine("Машинка - 180.00 грн");
+            Console.WriteLine("Конструктор - 520.00 грн");
+            Console.WriteLine("М'яка іграшка - 300.00 грн");
         }
     }
 }
